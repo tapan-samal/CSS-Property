@@ -1,0 +1,304 @@
+/* 
+=> CSS: Cascading Style Sheet.
+   It is a language that is used to describe the STYLE of a document.
+
+=> Basic Syntax: h1 {color: red;} | Here h1 is Selector, color is Property and red is Value.
+
+=> Type of CSS
+   >Inline: <h1 style="color: white"> Apana College </h1>
+   >Internal/<style> tag: <style>
+                            h1{ color: red;}
+                          </style>
+   >External Stylesheet: Writing CSS in a separate document with extention .css & linking it with HTML file.
+
+=> Type of Selectors
+   >Universal Selector: *{....}
+   >Element Selector: head/h1/p/a/img/span/button{....}
+   >ID Selector: #myId{....}
+   >Class Selector: .myClass{....}
+
+=> Units in CSS
+    >Absolute
+    :: pixels(px): 96px = 1 inch
+    >Relative
+    :: % , em, rem
+
+=> Alpha Channel: opacity (0 to 1)
+
+=> Display Property
+    >inline: Takes only the space required by the element. (no margin/ padding)
+    >block: Take full space available in width.
+    >inline-block: Similar to inline but we can set margin and padding.
+    >none: Removes the element from the document and doesn't reserve its space.
+    >visibility:hidden: Hides the element but keeps its position and reserves its space.  
+
+=> Position
+    >static: Default position (The top, right, bottom, left, and z-index properties have no effect).
+    >relative: Element is relative to itself. (The top, right, bottom, left, and z-index will work).
+    >absolute: Positioned relative to its closest positioned ancestor. (removed from the flow).
+    >fixed: Positioned relative to browser.(removed from flow)
+    >sticky: Positioned based on user's scroll position.
+
+
+*/
+
+/* Color Property */
+#color_type{
+    color: black;
+    color: rgb(red, green, blue);
+    color: rgba(red, green, blue, alpha);
+    color: #ffff;
+}
+
+/* Background Color Property */
+.background_type{
+    background-color: #ffff;
+    background-image: linear-gradient(to right, black, blue, white);
+    background-image: radial-gradient(circle, black, blue);
+    background-image: repeating-linear-gradient(to top, black, blue);
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-attachment: scroll;
+    background-position: left;
+    background-size: cover;
+    backface-visibility: hidden;
+    backface-visibility: visible;
+    background-clip: padding-box;
+    background: scroll black no-repeat url(img.jpg);
+}
+
+/* Text Property */
+.text_style{
+    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-shadow: 2px 2px red;
+    text-indent: 15px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 10px;
+    writing-mode: vertical-lr; 
+    text-orientation: upright;
+    user-select: none;
+}
+
+/* Font Property */
+.font_style{
+    color: violet;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: expanded;
+    font-stretch: condensed;
+}
+
+/* Border Property */
+.border_style{
+    border-style: double;
+    border-radius: 10px 20px;
+    border-radius: 50%;
+    border-width: 50px;
+    border-color: aqua;
+    border-image: url(image5.jpg);
+    border-top: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-color: cyan;
+    border-right-width: 2px;
+    border-collapse: separate;
+    border: 2px solid black;
+    outline: 5px dotted darkgreen;
+}
+
+/* Box Model Property */
+.box_style{
+    height: 100vh;
+    width: 100px;
+    width: 100%;
+    padding: 20px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding: 1px 2px 3px 5px;
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 10px;
+    margin: 1px 2px 3px 4px;
+    box-shadow: 10px 10px 5px gray;
+}
+
+/* Display Property */
+.display{
+    display: inline;
+    display: block;
+    display: inline-block;
+    display: none;
+    display: flex;
+    display: inline-flex;
+    display: grid;
+    display: list-item;
+    visibility: hidden;
+    clear: both;
+    float: right;
+    cursor: pointer;
+}
+
+/* Position Property */
+.position{
+    position: static;
+    position: relative;
+    top: 50px;
+    bottom: 50px;
+    left: 20px;
+    right: 20px;
+    z-index: 1;
+    position: absolute;
+    position: fixed;
+    position: sticky;
+}
+
+/* Z-index Property */
+.stack_level{
+    z-index: 0;
+    z-index: 10;
+}
+
+/* Overflow Property */
+.overflow{
+    overflow: auto;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Flex Box */
+.flexible_layout{
+    display: flex;
+    flex: auto;
+    flex: 2;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    row-gap: 10px;
+    column-gap: 10px;
+    gap: 10px;
+}
+.flex_container{
+    justify-content: space-evenly;
+    justify-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    align-content: flex-end;
+}
+.flex_item{
+    align-self: baseline;
+    flex-grow: 10px;
+    flex-shrink: 10px;
+}
+
+/* Content Style */
+.content{
+    column-count: 3;
+    column-gap: 30px;
+    column-fill: balance;
+    column-rule: 5px solid blue;
+    column-width: 400px;
+    column-span: all;
+}
+
+/* Grid Property */
+.grid_layout{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-gap: 10px, 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+}
+/* Link Property */
+a :link {color: blue;}
+a :visited {color: red;} 
+a :active {background-color: aliceblue;}
+
+/* Pseudo Elements */
+p ::first-letter{font-style: italic; color: blue;}
+p ::first-line{line-height: 20px;}
+
+/* 2D & 3D Transformations */
+.rotate{
+    transform: skew(45deg);
+    transform: rotate(50deg);
+    transform: rotateX(70deg);
+    transform: rotateY(30deg);
+    transform-origin: 0% 100%;
+}
+.scale{
+    transform: scale(2);
+    transform: scale(0.5);
+    transform: scale(1,2);
+    transform: scaleX(.6);
+    transform: scaleY(.6);
+}
+.translate{
+    transform: translate(20px);
+    transform: translate(20px, 50px);
+    transform: translateX(20px);
+    transform: translateY(20px);
+}
+
+/* Transitions Property */
+.transition{
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    transition: font-size 2s ease-in-out 1s;
+    transition: height 2s ease-out 1s;
+}
+
+/* Animation */
+.animation{
+    animation-name: myAni;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation: myAni 2s ease 3s infinite normal;
+}
+@keyframe myAni{
+    from {font-size: 20px;}
+    to {font-size: 40px;}
+}
+@keyframe myAni{
+    0% {background-color: red;}
+    25% {background-color: green;}
+    50% {background-color: white;}
+    100% {background-color: blue;}
+}
+
+/* Media Queries - Responsive */
+@media screen and (max-width: 900px) {
+    body{
+        font-size: 50px;
+    }
+}
+@media screen and (min-width: 600px) {
+    body{
+        font-size: 20px;
+    }
+}
