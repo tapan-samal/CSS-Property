@@ -1,12 +1,11 @@
-/* 
 => CSS: Cascading Style Sheet.
    It is a language that is used to describe the STYLE of a document.
 
-=> Basic Syntax: h1 {color: red;} | Here h1 is Selector, color is Property and red is Value.
+=> Basic Syntax: h1 {color: red;} || Here h1 is Selector, color is Property and red is Value.
 
 => Type of CSS
-   >Inline: <h1 style="color: white"> Apana College </h1>
-   >Internal/<style> tag: <style>
+   >Inline: <h1 style="color: white"> Commerce Coder</h1>
+   >Internal:             <style>
                             h1{ color: red;}
                           </style>
    >External Stylesheet: Writing CSS in a separate document with extention .css & linking it with HTML file.
@@ -18,29 +17,26 @@
    >Class Selector: .myClass{....}
 
 => Units in CSS
-    >Absolute
+    > Absolute
     :: pixels(px): 96px = 1 inch
-    >Relative
+    > Relative
     :: % , em, rem
 
 => Alpha Channel: opacity (0 to 1)
 
 => Display Property
-    >inline: Takes only the space required by the element. (no margin/ padding)
-    >block: Take full space available in width.
-    >inline-block: Similar to inline but we can set margin and padding.
-    >none: Removes the element from the document and doesn't reserve its space.
-    >visibility:hidden: Hides the element but keeps its position and reserves its space.  
+    > inline: Takes only the space required by the element. (no margin/ padding)
+    > block: Take full space available in width.
+    > inline-block: Similar to inline but we can set margin and padding.
+    > none: Removes the element from the document and doesn't reserve its space.
+    > visibility:hidden: Hides the element but keeps its position and reserves its space.  
 
 => Position
-    >static: Default position (The top, right, bottom, left, and z-index properties have no effect).
-    >relative: Element is relative to itself. (The top, right, bottom, left, and z-index will work).
-    >absolute: Positioned relative to its closest positioned ancestor. (removed from the flow).
-    >fixed: Positioned relative to browser.(removed from flow)
-    >sticky: Positioned based on user's scroll position.
-
-
-*/
+    > static: Default position (The top, right, bottom, left, and z-index properties have no effect).
+    > relative: Element is relative to itself. (The top, right, bottom, left, and z-index will work).
+    > absolute: Positioned relative to its closest positioned ancestor. (removed from the flow).
+    > fixed: Positioned relative to browser.(removed from flow)
+    > sticky: Positioned based on user's scroll position.
 
 /* Color Property */
 #color_type{
