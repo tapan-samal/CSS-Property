@@ -32,8 +32,8 @@
     > visibility:hidden: Hides the element but keeps its position and reserves its space.  
 
 => Position
-    > static: Default position (The top, right, bottom, left, and z-index properties have no effect).
-    > relative: Element is relative to itself. (The top, right, bottom, left, and z-index will work).
+    > static: Default position (top, right, bottom, left, and z-index properties have no effect).
+    > relative: Element is relative to itself. (top, right, bottom, left, and z-index will work).
     > absolute: Positioned relative to its closest positioned ancestor. (removed from the flow).
     > fixed: Positioned relative to browser.(removed from flow)
     > sticky: Positioned based on user's scroll position.
