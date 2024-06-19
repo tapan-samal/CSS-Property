@@ -45,7 +45,7 @@
     color: rgba(red, green, blue, alpha);
     color: #ffff;
 }
-
+/////////////////////////////////////////////////////////////////////////////
 /* Background Color Property */
 .background_type{
     background-color: #ffff;
